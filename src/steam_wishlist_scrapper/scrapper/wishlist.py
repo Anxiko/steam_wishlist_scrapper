@@ -4,7 +4,7 @@ from typing import Any
 import httpx as httpx
 from httpx import Response
 
-from models.game import Game
+from steam_wishlist_scrapper.models.game import Game
 
 _WISHLIST_URL_TEMPLATE: Template = Template(
 	"https://store.steampowered.com/wishlist/id/${vanity_url}/wishlistdata/?p=${page}"

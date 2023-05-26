@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "steam_wishlist_scrapper"
+version = "0.0.1"
+authors = [
+  { name="Joaquín Monteagudo Gómez", email="kindos7@gmail.com" },
+]
+description = "Barebones package, for extracting the games of a Steam user's wishlist"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Anxiko/steam_wishlist_scrapper"
