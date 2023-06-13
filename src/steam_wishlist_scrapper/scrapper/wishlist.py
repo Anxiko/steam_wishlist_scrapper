@@ -1,3 +1,4 @@
+from pprint import pprint
 from string import Template
 from typing import Any
 
@@ -36,3 +37,13 @@ def get_all_wishlist_games(vanity_url: str) -> list[Game]:
 		page += 1
 
 	return list(filter(Game.is_game, results))
+
+
+def _main() -> None:
+	vanity_url: str = input("Vanity URL: ")
+	games: list[Game] = get_all_wishlist_games(vanity_url)
+	pprint(games)
+
+
+if __name__ == '__main__':
+	_main()
